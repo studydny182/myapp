@@ -1,7 +1,9 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end('zzzHello dari local DevOps UPDATE');
+  res.end('harusnya berubah Hello dari local DevOps UPDATE');
 });
 
-server.listen(3000);
+server.listen(3000, "0.0.0.0", () => {
+  console.log("Server running on port 3000");
+});
