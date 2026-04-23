@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end('XXXXXini otomatis Hello dari local DevOps UPDATE');
+  res.end('mantap boss');
 });
 
 server.listen(3000, "0.0.0.0", () => {
